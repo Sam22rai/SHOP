@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiny Dreams Crafts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌸 Tiny Dreams Crafts 🌸</h1>
+    <p>Handmade mini creations, custom crafts & creative designs</p>
+    <p>✨ Made with love and imagination ✨</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to our creative world 🧸</h2>
+    <p>Cute handmade models, mini creations and custom craft designs.</p>
+    <button onclick="orderNow()">Order Now</button>
+</section>
+
+<section>
+    <h2>About Us 💕</h2>
+    <p>We create handmade crafts and creative models specially designed for kids, school projects and special occasions.</p>
+</section>
+
+<section>
+    <h2>Our Custom Creations 🧸</h2>
+    <div class="cards" id="productList"></div>
+</section>
+
+<section>
+    <h2>Featured Highlights 🌟</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🏠 Mini Houses</h3>
+            <p>Beautiful handmade models</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Custom Crafts</h3>
+            <p>Made specially for you</p>
+        </div>
+        <div class="card">
+            <h3>✨ School Projects</h3>
+            <p>Creative project models</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Our Gallery 📸</h2>
+    <div class="gallery">
+        <img src="images/house1.jpg">
+        <img src="images/house2.jpg">
+        <img src="images/house3.jpg">
+    </div>
+</section>
+
+<section>
+    <h2>Contact Us 💌</h2>
+    <form onsubmit="event.preventDefault(); alert('Message simulation sent!');">
+        <input type="text" placeholder="Your Name"><br><br>
+        <input type="text" placeholder="Phone Number"><br><br>
+        <textarea placeholder="Your Message"></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Tiny Dreams Crafts</p>
+</footer>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

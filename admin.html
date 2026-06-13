@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌸 Admin Panel 🌸</h1>
+    <p>Manage Tiny Dreams Crafts</p>
+</header>
+
+<nav>
+    <a href="index.html">View Shop</a>
+    <a href="admin.html">Admin Panel</a>
+</nav>
+
+<section>
+    <h2>Add New Product</h2>
+    <input type="text" id="productName" placeholder="Product Name"><br><br>
+    <input type="text" id="productPrice" placeholder="Price"><br><br>
+    
+    <p style="margin-bottom: 5px; color: #ff4fa3; font-weight: bold;">Upload Product Photo:</p>
+    <input type="file" id="productImage" accept="image/*" style="border: none; background: transparent; width: auto;"><br><br>
+    
+    <button onclick="addProduct()">Add Product</button>
+</section>
+
+<hr style="border: 1px solid #ff8fcf; width: 80%; margin: 20px auto;">
+
+<section>
+    <h2>Current Live Products</h2>
+    <p>Click "Delete Product" to completely remove an item from the main website.</p>
+    <div class="cards" id="adminProductList"></div>
+</section>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
