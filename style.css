@@ -99,3 +99,39 @@ footer{
     padding:20px;
     text-align: center;
 }
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 600px) {
+    /* Product list ko block layout me badalna taaki cards chote na ho */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Mobile par har card thoda bada aur center me dikhe */
+    .card {
+        width: 85% !important;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Images ko poori width dena */
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Admin inputs ko phone par bada karna taaki typing asaan ho */
+    section input[type="text"] {
+        width: 80% !important;
+        padding: 12px;
+        font-size: 16px; /* 16px se mobile par auto-zoom nahi hota text input pe click karne par */
+    }
+
+    button {
+        width: 85%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
